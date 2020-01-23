@@ -9,11 +9,6 @@ app.listen(9001, function () {
 });
 
 // noinspection JSUnresolvedFunction
-app.get('/', function (req, res) {
-    return res.send('Working');
-});
-
-// noinspection JSUnresolvedFunction
 app.get('/:action', function (req, res) {
     let action = req.params.action || req.param('action');
 
